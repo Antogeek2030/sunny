@@ -1,0 +1,69 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Drain Maintenance Sunnyvale CA | ${SITE_TITLE}`} description="Preventive drain maintenance plans for homes and businesses in Sunnyvale, CA. Reduce emergencies and keep lines clear." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Preventive Drain Maintenance</h1>
+			<p>Stay ahead of clogs with scheduled cleaning and inspections.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>Prevention Beats Emergency Calls</h2>
+					<p>Regular drain maintenance reduces the risk of backups, odors, and expensive emergency service. It’s especially valuable for commercial kitchens, multi-unit buildings, and homes with older plumbing or known root issues.</p>
+					<p>We create simple, practical maintenance schedules based on how your drains are used and what we’ve seen inside the lines.</p>
+					
+					<h3>Typical Maintenance Services</h3>
+					<ul>
+						<li>Scheduled drain cleaning or hydro jetting</li>
+						<li>Periodic camera checks on critical lines</li>
+						<li>Grease management recommendations</li>
+						<li>Documentation for property managers</li>
+						<li>Priority response if an issue arises</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Who Benefits Most</h3>
+					<ul>
+						<li>Restaurants and food-service businesses</li>
+						<li>Apartment and condo complexes</li>
+						<li>Offices with high restroom traffic</li>
+						<li>Homes with recurring main-line problems</li>
+						<li>Properties near large trees</li>
+					</ul>
+					
+					<p>Ask about a maintenance plan tailored to your property. We’ll recommend a realistic interval so you’re not over-serviced or under-protected.</p>
+					
+					<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+					<a href="/contact/" class="btn btn-outline" style="margin-left:0.5rem;">Request Quote</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Protect Your Drains Year-Round</h2>
+			<p>Ask about preventive maintenance for your Sunnyvale property.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

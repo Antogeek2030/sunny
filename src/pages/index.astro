@@ -1,0 +1,126 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, PHONE, PHONE_TEL } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`${SITE_TITLE} | Fast Local Drain Experts`} description={SITE_DESCRIPTION} />
+</head>
+<body>
+	<Header />
+
+	<section class="hero">
+		<div class="container">
+			<h1>Drain Cleaning Experts in Sunnyvale, CA</h1>
+			<p>
+				Trusted local specialists serving Sunnyvale and the South Bay.
+				Fast, thorough drain cleaning, hydro jetting, and clog removal — done right.
+			</p>
+			<div class="hero-buttons">
+				<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call Us: {PHONE}</a>
+				<a href="/contact/" class="btn btn-secondary">Get a Free Quote</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section" id="services">
+		<div class="container">
+			<div class="section-header">
+				<h2>Our Core Drain Services</h2>
+				<p>From stubborn clogs to full-line hydro jetting, we keep Sunnyvale drains flowing freely.</p>
+			</div>
+			<div class="cards">
+				<div class="card">
+					<h3>Drain Cleaning</h3>
+					<p>Professional cleaning of kitchen, bathroom, laundry, and main line drains. We clear grease, hair, roots, and debris without damaging your pipes.</p>
+					<a href="/services/drain-cleaning/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Hydro Jetting</h3>
+					<p>High-pressure water jetting that scours pipe walls clean — ideal for heavy buildup, grease traps, and recurring clogs.</p>
+					<a href="/services/hydro-jetting/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Camera Inspection</h3>
+					<p>Video camera inspection to locate blockages, cracks, root intrusion, and other issues with clear on-screen evidence.</p>
+					<a href="/services/camera-inspection/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Clog Removal</h3>
+					<p>Same-day clog removal for sinks, tubs, showers, toilets, and floor drains. We fix the problem at the source.</p>
+					<a href="/services/clog-removal/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Preventive Maintenance</h3>
+					<p>Scheduled drain maintenance plans that reduce emergencies and keep commercial and residential systems running smoothly.</p>
+					<a href="/services/maintenance/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Emergency Service</h3>
+					<p>When water is backing up, we’re ready. Fast response for urgent drain and sewer line problems across Sunnyvale.</p>
+					<a href="/contact/">Call now →</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-alt">
+		<div class="container">
+			<div class="section-header">
+				<h2>Why Sunnyvale Homeowners Choose Us</h2>
+				<p>Local expertise, honest pricing, and results you can see.</p>
+			</div>
+			<div class="cards">
+				<div class="card">
+					<h3>Local & Responsive</h3>
+					<p>Based near W Evelyn Ave, we know Sunnyvale neighborhoods and respond quickly to service calls.</p>
+				</div>
+				<div class="card">
+					<h3>Modern Equipment</h3>
+					<p>We use hydro jetters, sewer cameras, and professional tools — not just a basic snake.</p>
+				</div>
+				<div class="card">
+					<h3>Clear Communication</h3>
+					<p>You get upfront options, transparent pricing, and before/after explanations so you understand the work.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<div class="section-header">
+				<h2>What Our Customers Say</h2>
+			</div>
+			<div class="testimonials">
+				<div class="testimonial">
+					<blockquote>“Our kitchen drain was completely blocked. They arrived the same day, camera-inspected, and hydro-jetted the line. Running perfectly since.”</blockquote>
+					<cite>— Maria R., Sunnyvale</cite>
+				</div>
+				<div class="testimonial">
+					<blockquote>“Professional, clean, and honest. They showed us the camera footage of root intrusion and fixed it without unnecessary extras.”</blockquote>
+					<cite>— James T., Sunnyvale</cite>
+				</div>
+				<div class="testimonial">
+					<blockquote>“Great for our small office building. Scheduled maintenance has stopped the recurring bathroom clogs we used to get.”</blockquote>
+					<cite>— Priya S., South Bay</cite>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Slow Drain or Complete Clog?</h2>
+			<p>Don’t wait for a backup. Call today for fast drain cleaning service in Sunnyvale and nearby communities.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

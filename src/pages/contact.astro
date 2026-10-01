@@ -1,0 +1,92 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL, EMAIL, ADDRESS } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Contact Us | ${SITE_TITLE}`} description="Contact Drain Cleaning Sunnyvale CA for drain cleaning, hydro jetting, and clog removal. Located at 1095 W Evelyn Ave #104, Sunnyvale, CA 94086." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Contact Us</h1>
+			<p>Reach out for a free quote or same-day drain service in Sunnyvale.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>Get in Touch</h2>
+					<p>Call, email, or send a message. We’re happy to discuss your drain issue and recommend the right solution.</p>
+					
+					<p><strong>Phone:</strong> <a href={`tel:${PHONE_TEL}`}>{PHONE}</a></p>
+					<p><strong>Email:</strong> <a href={`mailto:${EMAIL}`}>{EMAIL}</a></p>
+					<p><strong>Address:</strong> {ADDRESS}</p>
+					
+					<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call Now</a>
+
+					<div class="mt-2">
+						<h3>Find Us</h3>
+						<div class="map-wrapper">
+							<iframe
+								src="https://maps.google.com/maps?q=1095+W+Evelyn+Ave+%23104,+Sunnyvale,+CA+94086&t=&z=15&ie=UTF8&iwloc=&output=embed"
+								title="Map showing our location at 1095 W Evelyn Ave #104, Sunnyvale, CA 94086"
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"
+								allowfullscreen
+							></iframe>
+						</div>
+					</div>
+				</div>
+				<div>
+					<h2>Request a Free Quote</h2>
+					<form method="POST" action="https://formspree.io/f/YOUR_FORM_ID" class="contact-form">
+						<div class="form-group">
+							<label for="name">Full Name *</label>
+							<input type="text" id="name" name="name" required placeholder="Your name" />
+						</div>
+						<div class="form-group">
+							<label for="phone">Phone *</label>
+							<input type="tel" id="phone" name="phone" required placeholder="(408) 555-0000" />
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" placeholder="you@example.com" />
+						</div>
+						<div class="form-group">
+							<label for="service">Service Needed</label>
+							<select id="service" name="service">
+								<option value="">Select a service</option>
+								<option value="drain-cleaning">Drain Cleaning</option>
+								<option value="hydro-jetting">Hydro Jetting</option>
+								<option value="camera-inspection">Camera Inspection</option>
+								<option value="clog-removal">Clog Removal</option>
+								<option value="maintenance">Preventive Maintenance</option>
+								<option value="emergency">Emergency / Backup</option>
+								<option value="other">Other / Not Sure</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="details">Project Details</label>
+							<textarea id="details" name="details" placeholder="Describe the drain issue, location (kitchen, main line, etc.), and preferred timing..."></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary" style="width:100%;">Submit Request</button>
+						<p class="mt-1" style="font-size:0.85rem;">By submitting you agree to be contacted regarding your request. We respect your privacy.</p>
+					</form>
+					<p class="mt-2" style="font-size:0.9rem;color:var(--text-light);"><em>Note: Replace the Formspree form ID in the form action with your own endpoint, or connect to your preferred form backend.</em></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

@@ -1,0 +1,69 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Hydro Jetting Sunnyvale CA | ${SITE_TITLE}`} description="Hydro jetting drain cleaning in Sunnyvale, CA. High-pressure water jetting for grease, scale, and tough clogs." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Hydro Jetting in Sunnyvale</h1>
+			<p>High-pressure water cleaning that restores pipes to like-new condition.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>Powerful, Thorough Line Cleaning</h2>
+					<p>Hydro jetting uses controlled high-pressure water to scour the inside of pipes. Unlike a basic snake that punches a hole through a clog, jetting removes buildup from the entire pipe wall — grease, scale, sludge, and soft roots.</p>
+					<p>It’s the preferred method for commercial kitchens, recurring residential clogs, and main lines that need a deep clean.</p>
+					
+					<h3>Benefits</h3>
+					<ul>
+						<li>Removes more buildup than snaking alone</li>
+						<li>Safe for most modern pipe materials when done correctly</li>
+						<li>Helps prevent rapid re-clogging</li>
+						<li>Effective on grease, scale, and organic debris</li>
+						<li>Often paired with camera inspection for best results</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Ideal For</h3>
+					<ul>
+						<li>Kitchen drains with heavy grease</li>
+						<li>Main sewer lines with recurring issues</li>
+						<li>Commercial and multi-unit properties</li>
+						<li>Lines after root cutting or repair</li>
+					</ul>
+					
+					<h3>Is Hydro Jetting Right for You?</h3>
+					<p>We’ll evaluate pipe condition (often with a camera first) and recommend jetting only when it’s appropriate and safe for your system.</p>
+					
+					<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+					<a href="/contact/" class="btn btn-outline" style="margin-left:0.5rem;">Request Quote</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Need a Deep Clean?</h2>
+			<p>Ask about hydro jetting for lasting results in Sunnyvale.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

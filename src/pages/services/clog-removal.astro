@@ -1,0 +1,68 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Clog Removal Sunnyvale CA | ${SITE_TITLE}`} description="Fast clog removal for sinks, showers, toilets, and main lines in Sunnyvale, CA. Same-day service available." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Clog Removal in Sunnyvale</h1>
+			<p>Fast, effective clearing of blocked drains and toilets.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>Clear the Clog. Keep It Clear.</h2>
+					<p>We clear clogs in sinks, showers, tubs, toilets, floor drains, and main lines. Our approach focuses on removing the blockage and understanding why it formed so the same problem is less likely to return.</p>
+					<p>Chemical drain cleaners often fail on serious clogs and can damage pipes. Professional mechanical or hydro cleaning is safer and more effective for most situations.</p>
+					
+					<h3>Common Clog Causes</h3>
+					<ul>
+						<li>Grease and food waste in kitchen lines</li>
+						<li>Hair and soap scum in bathrooms</li>
+						<li>Flushable wipes and foreign objects</li>
+						<li>Tree roots in older sewer lines</li>
+						<li>Scale buildup in hard-water areas</li>
+					</ul>
+				</div>
+				<div>
+					<h3>What to Expect</h3>
+					<ul>
+						<li>Prompt response for urgent backups</li>
+						<li>Identification of the clog location</li>
+						<li>Appropriate clearing method (snake, jet, etc.)</li>
+						<li>Advice on prevention and next steps</li>
+					</ul>
+					
+					<p>If the clog is a symptom of a larger issue (roots, broken pipe), we’ll explain options clearly so you can decide how to proceed.</p>
+					
+					<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+					<a href="/contact/" class="btn btn-outline" style="margin-left:0.5rem;">Request Quote</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Clogged Drain Right Now?</h2>
+			<p>Call for same-day clog removal in Sunnyvale.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

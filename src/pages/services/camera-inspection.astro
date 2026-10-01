@@ -1,0 +1,70 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Sewer Camera Inspection Sunnyvale | ${SITE_TITLE}`} description="Video camera drain and sewer inspection in Sunnyvale, CA. Locate clogs, roots, cracks, and damage with clear footage." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Camera Inspection in Sunnyvale</h1>
+			<p>See exactly what’s going on inside your drains and sewer lines.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>Diagnose Problems with Video</h2>
+					<p>Guesswork is expensive. A sewer camera inspection lets us see blockages, root intrusion, cracks, offsets, and collapsed sections in real time. You get a clear picture of the issue and a recommended plan of action.</p>
+					<p>Camera inspections are valuable before buying a home, after a major clog, or when problems keep coming back.</p>
+					
+					<h3>What We Look For</h3>
+					<ul>
+						<li>Location and type of clogs</li>
+						<li>Root intrusion into joints</li>
+						<li>Cracks, breaks, and separations</li>
+						<li>Bellies (low spots) that trap debris</li>
+						<li>Scale and grease buildup</li>
+						<li>Foreign objects or construction debris</li>
+					</ul>
+				</div>
+				<div>
+					<h3>When to Request an Inspection</h3>
+					<ul>
+						<li>Recurring clogs in the same line</li>
+						<li>Multiple fixtures draining slowly</li>
+						<li>Before or after major plumbing work</li>
+						<li>Home purchase or sale inspections</li>
+						<li>Suspected root or structural damage</li>
+					</ul>
+					
+					<p>Findings are explained clearly, and we can often perform cleaning or further work in the same visit when appropriate.</p>
+					
+					<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+					<a href="/contact/" class="btn btn-outline" style="margin-left:0.5rem;">Request Quote</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Know What’s in Your Pipes</h2>
+			<p>Schedule a camera inspection in Sunnyvale today.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>
